@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+
+   <meta charset="UTF-8">
+
+    <title>EV BUNK</title>
+
+     <link rel="stylesheet" href="stylenew.css">
+
+ <!---we had linked our css file----->
+   <script>
+
+   </script>
+
+</head>
+
+<body>
+
+ <div class="full-page">
+
+ <div class="navbar">
+
+ <div>
+
+    <a id="at" href='website.html'>EV BUNK</a>
+
+ </div>
+
+ <nav>
+
+    <ul id='MenuItems'>
+
+    
+    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+
+    </ul>
+
+ </nav>
+
+    </div>
+
+    <div id='login-form'class='login-page'>
+
+ <div class="form-box">
+
+    <div class='button-box'>
+
+    <div id='btn'></div>
+
+    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+
+    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+
+    </div>
+
+    <form id='login'  class='input-group-login' method="post" action="Hello">
+
+    <input type='text'name="email" class='input-field'placeholder='Email Id' required >
+
+    <input type='password'name="password"class='input-field'placeholder='Enter Password' required>
+
+    <input type='checkbox'class='check-box'><span>Remember Password</span>
+
+    <button type='submit'class='submit-btn'>Log in</button>
+
+  </form>
+
+ <form id='register' class='input-group-register' method="get" action="Hello">
+
+   <input type='text'name='Admin Name'class='input-field'placeholder='Admin Name' required>
+
+   <input type='text'name="Address"class='input-field'placeholder='Address' required>
+   
+   <input type='text'name="City" class='input-field'placeholder='City' required>
+
+   <input type='text'name="ID proof"class='input-field'placeholder='ID proof' required>
+
+  <input type='text'name="Username"class='input-field'placeholder='Username' required>
+
+   <input type='email'name="Email Id"class='input-field'placeholder='Email Id' required>
+   
+   <input type='number'name="Mobile Number"class='input-field'placeholder='Mobile Number' required>
+
+  <input type='password'name="Enter Password"class='input-field'placeholder='Enter Password' required>
+
+  <input type='password'class="input-field"placeholder='Confirm Password'    required>
+
+   <input type='checkbox'class="check-box"><span>I agree to the terms and conditions</span>
+
+    <button type='submit'class="submit-btn">Register</button>
+
+   </form>
+
+ </div>
+
+    </div>
+
+    </div>
+
+    <script>
+
+    var x=document.getElementById('login');
+
+  var y=document.getElementById('register');
+
+  var z=document.getElementById('btn');
+
+  function register()
+
+  {
+
+   x.style.left='-400px';
+
+   y.style.left='50px';
+
+   z.style.left='110px';
+
+  }
+
+  function login()
+
+  {
+
+   x.style.left='50px';
+
+   y.style.left='450px';
+
+   z.style.left='0px';
+
+  }
+
+ </script>
+
+ <script>
+
+    var modal = document.getElementById('login-form');
+
+    window.onclick = function(event) 
+
+    {
+
+ if (event.target == modal) 
+
+ {
+
+    modal.style.display = "none";
+
+ }
+
+    }
+
+    </script>
+
+</body>
+
+</html>
